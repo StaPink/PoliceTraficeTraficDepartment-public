@@ -1,0 +1,13 @@
+-- What types of tickets are most commonly issued? 
+
+SELECT {
+	[Measures].[Amount]
+} 
+ON COLUMNS,
+ORDER(
+    {[Ticket].[Violation Article].[Violation Article].Members},
+    [Measures].[Amount],
+    DESC
+)
+ON ROWS
+FROM [Traffic Department DW cube]

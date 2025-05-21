@@ -1,0 +1,9 @@
+--Does ticket with price over 1000$ have lower average rating than those with price bellow 1000$? 
+
+
+SELECT {
+    ([Ticket].[Price Category].[cheap]),
+    EXCEPT([Ticket].[Price Category].MEMBERS, {[Ticket].[Price Category].[cheap]})
+} ON COLUMNS,
+{[Measures].[Average rating value]} ON ROWS
+FROM [Traffic Department DW cube]

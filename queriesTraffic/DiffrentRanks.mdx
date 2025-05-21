@@ -1,0 +1,5 @@
+-- What is average rating of different ranks of policeman’s (what is average for lieutenant etc.)? 
+
+SELECT {[Measures].[Average rating value]} ON COLUMNS,
+{[Policeman].[Job Rank].Members} ON ROWS
+FROM [Traffic Department DW cube]

@@ -1,0 +1,5 @@
+-- Give me the most money giving street for giving tickets? 
+
+SELECT {[Measures].[Average amount]} ON COLUMNS,
+{[Place].[Street].Members} ON ROWS
+FROM [Traffic Department DW cube]

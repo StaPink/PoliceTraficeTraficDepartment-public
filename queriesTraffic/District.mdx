@@ -1,0 +1,5 @@
+--Is there corelation between rating and district? 
+
+SELECT {[Measures].[Average rating value]} ON COLUMNS,
+{[Place].[District].Members} ON ROWS
+FROM [Traffic Department DW cube]

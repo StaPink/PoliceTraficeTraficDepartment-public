@@ -1,0 +1,5 @@
+--Is service coreeleted with day of the week? 
+
+SELECT {[Measures].[Average rating value]} ON COLUMNS,
+{[Date].[Day Of Week No].Members} ON ROWS
+FROM [Traffic Department DW cube]

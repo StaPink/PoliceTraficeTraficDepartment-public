@@ -1,0 +1,8 @@
+-- What are the average victim satisfaction scores for different age groups in current and previous months?
+
+SELECT {
+	( [Date].[Year].[2018]),
+	( [Date].[Year].[2017])
+} ON COLUMNS,
+{[Measures].[Average amount]} ON ROWS
+FROM [Traffic Department DW cube]

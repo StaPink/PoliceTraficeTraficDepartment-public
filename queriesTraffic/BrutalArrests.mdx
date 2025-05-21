@@ -1,0 +1,5 @@
+-- Are policeman with history of brutal arrests performing worst service? 
+
+SELECT {[Measures].[Average rating value]} ON COLUMNS,
+{[Policeman].[Had History Of Brutal Arrests].Members} ON ROWS
+FROM [Traffic Department DW cube]

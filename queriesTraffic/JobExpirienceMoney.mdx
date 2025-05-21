@@ -1,0 +1,5 @@
+--Are policeman with longer job experience collecting less money? 
+
+SELECT {[Measures].[Average amount]} ON COLUMNS,
+{[Policeman].[Work Experience].Members} ON ROWS
+FROM [Traffic Department DW cube]

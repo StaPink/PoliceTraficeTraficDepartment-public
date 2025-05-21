@@ -1,0 +1,5 @@
+--Are policeman with longer job experience performing worst service? 
+
+SELECT {[Measures].[Average rating value]} ON COLUMNS,
+{[Policeman].[Work Experience].Members} ON ROWS
+FROM [Traffic Department DW cube]
